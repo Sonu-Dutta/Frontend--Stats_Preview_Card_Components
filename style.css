@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --more-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  html {
+    background-color: var(--main-background);
+    color: var(--transparent-white);
+    font-family: "Inter", sans-serif;
+  }
+  main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main div.card {
+    height: 30rem;
+    width: 76rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row-reverse ;
+    margin: 2rem;
+    
+  }
+  main div.card-content{
+    background: var(--card-background);
+    width: 38rem;
+   height: 28rem;
+   padding: 2rem;
+   border-radius: 1rem 0 0 1rem;
+  }
+  main div.card-img {
+   width: 34rem;
+   height: 28rem;
+   background: url(./images/image-header-desktop.jpg) no-repeat ;
+   border-radius: 0 1rem 1rem 0;
+   position: relative;
+   display: flex;
+   justify-content: center;
+
+  }
+  main div.card-img::before{
+    content: " ";
+    background-color: rgb(187, 39, 187,0.4);
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+   
+     
+  }  
+  main div.card div.card-content span.card-title-accent{
+    color:var(--accent) ;
+  }
+  main div.card div.card-content h1.card-title{
+    margin: 2rem 3rem 2rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+  main div.card div.card-content p.card-text{
+    margin: 0 3rem 2rem 2rem;
+    font-size:1.3rem ;
+    line-height: 1.9rem;
+    font-weight: 400;
+  }
+  main div.card div.card-content div.card-stats{
+    padding-top: 2.8rem;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  main div.card div.card-content div.card-stats h2{
+    font-weight: 700;
+    font-size: 1.6rem;
+    
+  }
+  main div.card div.card-content div.card-stats h3{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--more-transparent-white);
+  }
+@media (max-width:376px){
+  body{
+    padding: 8rem 0;
+  }
+  main div.card{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 1rem;
+    margin-bottom: 5rem;
+  }
+  main div.card-img {
+    border-radius: 1rem 1rem 0 0;
+    width:19.5rem;
+     height: 18rem;
+   }
+
+  main div.card-content{
+   width: 19.5rem;
+   border-radius: 0 0 1rem 1rem;
+   display: block;
+
+}
+main div.card div.card-content h1.card-title{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0.4rem;
+  text-align: center;
+}
+main div.card div.card-content p.card-text{
+  font-size:0.9rem ;
+  line-height: 1.4rem;
+  text-align: center;
+  margin: 0 0.6rem;
+}
+main div.card div.card-content div.card-stats{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+main div.card div.card-content div.card-stats h2{
+  font-weight: 700;
+  font-size: 1.2rem;
+  
+}
+main div.card div.card-content div.card-stats h3{
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+}
