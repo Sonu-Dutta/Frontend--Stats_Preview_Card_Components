@@ -56,7 +56,7 @@
   }
   main div.card-img::before{
     content: " ";
-    background-color: rgb(187, 39, 187,0.4);
+    background-color: rgba(162, 39, 187, 0.6);
     position: absolute;
     top: 0;
     left: 0; 
@@ -69,19 +69,20 @@
     color:var(--accent) ;
   }
   main div.card div.card-content h1.card-title{
-    margin: 2rem 3rem 2rem 2rem;
-    font-size: 2.5rem;
+    margin: 2.1rem 3rem 2rem 3rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: var(--white);
   }
   main div.card div.card-content p.card-text{
-    margin: 0 3rem 2rem 2rem;
-    font-size:1.3rem ;
-    line-height: 1.9rem;
+    margin: 0 3rem 2rem 3rem;
+    font-size:1rem ;
+    line-height: 1.5rem;
     font-weight: 400;
+    padding-right: 6rem;
   }
   main div.card div.card-content div.card-stats{
-    padding-top: 2.8rem;
+    padding-top: 2.4rem;
     display: flex;
     justify-content: space-around;
     
