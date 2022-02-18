@@ -97,7 +97,7 @@
     font-size: 0.8rem;
     color: var(--more-transparent-white);
   }
-@media (max-width:376px){
+@media (max-width:1233px){
   body{
     padding: 8rem 0;
   }
@@ -135,6 +135,7 @@ main div.card div.card-content p.card-text{
   line-height: 1.4rem;
   text-align: center;
   margin: 0 0.6rem;
+  padding: 0;
 }
 main div.card div.card-content div.card-stats{
   padding-top: 2rem;
@@ -142,6 +143,7 @@ main div.card div.card-content div.card-stats{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 1rem;
   
 }
 main div.card div.card-content div.card-stats h2{
